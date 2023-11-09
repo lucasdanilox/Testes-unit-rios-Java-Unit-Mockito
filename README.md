@@ -1,4 +1,4 @@
-# Teste Unitarios
+# Testes Unitarios
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/lucasdanilox/Projeto-springboot3-jpa/blob/main/LICENSE) 
 
 Este é um curso sobre Testes Unitarios,JUnit e Mockito.
