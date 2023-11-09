@@ -28,6 +28,4 @@ Lucas Danilo de Castro
 
 https://www.linkedin.com/in/lucasdanilox/
 
-https://todolist-rocket-u4dx.onrender.com/
-
 
