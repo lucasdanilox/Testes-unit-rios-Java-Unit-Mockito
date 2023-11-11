@@ -16,9 +16,7 @@ Este é um curso sobre Testes Unitarios,JUnit e Mockito.
 
 No projeto, foram realizadas as seguintes etapas:
 
-Foi desenvolvido um projeto que envolve a criação de uma livraria virtual com uma restrição de até cinco livros que podem ser inseridos
-e removidos dinamicamente. 
-O desenvolvimento desse projeto inclui a implementação de testes unitários para garantir a qualidade e a robustez do sistema.
+Durante o desenvolvimento do projeto da livraria virtual, adotamos práticas eficazes de teste unitário para garantir a qualidade e robustez do sistema. Destaca-se a aplicação das anotações @Before e @After como componentes essenciais nesse processo.
 
 Pré-requisitos: Java 21
 
