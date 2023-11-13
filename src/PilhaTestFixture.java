@@ -1,9 +1,12 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class PilhaTestFixture extends Pilha {
 
     private Pilha pilha;
@@ -40,7 +43,7 @@ public class PilhaTestFixture extends Pilha {
     }
 
 
-    @Test
+    @Test(timeout = 200)
     public void testNaoAdicionaAlemLimite() {
 
         try {
@@ -53,6 +56,7 @@ public class PilhaTestFixture extends Pilha {
         System.out.println("executou testNaoAdicionaAlemLimite");
 
     }
+
 
     @Test(expected = ArrayStoreException.class)
     public void testNaoAdicionaAlemLimiteException(){
