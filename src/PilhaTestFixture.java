@@ -42,25 +42,38 @@ public class PilhaTestFixture extends Pilha {
 
     @Test
     public void testNaoAdicionaAlemLimite() {
-        pilha.pop();
-        pilha.push(new Livro("A Volta"));
 
-        Livro livro = pilha.pop();
+        try {
+            pilha.push(new Livro("A Volta"));
+            fail();
+        } catch (ArrayStoreException e) {
+            assertTrue(true);
+        }
 
-        assertEquals("O Sol" , livro.getTitulo());
         System.out.println("executou testNaoAdicionaAlemLimite");
+
+    }
+
+    @Test(expected = ArrayStoreException.class)
+    public void testNaoAdicionaAlemLimiteException(){
+
+        pilha.push(new Livro("A Volta 2"));
+
+        System.out.println("Executou Este Metodo");
 
     }
 
     @Test
     public void testNaoAdicionaLivroForaPadraoNome() {
-        pilha.pop();
-        pilha.push(new Livro("Não Valido"));
+        try {
+            pilha.push(new Livro("Não Valido"));
+            fail();
 
-        Livro livro = pilha.pop();
+        } catch (ArrayStoreException e) {
+            assertTrue(true);
+        }
 
-        assertEquals("O Sol", livro.getTitulo());
-        System.out.println("executou testNaoAdicionaAlemLimite");
+        System.out.println("executou testNaoAdicionaForaPadraoNome");
 
     }
 }
